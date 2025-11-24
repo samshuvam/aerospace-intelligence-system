@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.mp4
+*.mp3
+*.wav
+data/
+model/*.gguf
+temp/
+*.png
+*.jpg
+*.json
+*.txt
+*.pdf
