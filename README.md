@@ -1,7 +1,6 @@
 # 🚀 Aerospace Intelligence System
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Research](https://img.shields.io/badge/Research-Domain%20Specific%20IR-orange)](research/)
 
 A research-enhanced information retrieval system that answers complex aerospace engineering questions by intelligently gathering and synthesizing information from web pages and YouTube videos using advanced algorithms and large language models.
@@ -200,4 +199,4 @@ For questions or collaboration opportunities:
 - GitHub: [@samshuvam](https://github.com/samshuvam)
 ---
 
-**Note**: This project is for educational and research purposes. The system's responses should be verified with authoritative sources before being used for critical applications.
+**SHUVAM - AP22110011478**
