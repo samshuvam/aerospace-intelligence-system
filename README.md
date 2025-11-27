@@ -8,7 +8,7 @@ A research-enhanced information retrieval system that answers complex aerospace 
 
 ## System Architecture
 
-## 🔬 Research Innovations
+## Research Innovations
 
 This project implements several research-backed innovations:
 
@@ -156,7 +156,7 @@ aerospace-intelligence-system/
 └── README.md              
 ```
 
-## 📜 Research Citations
+## Research Citations
 
 This project builds upon several important research papers:
 
@@ -176,7 +176,7 @@ This project builds upon several important research papers:
 5. **Multi-Document Summarization**:
    - Li, C., Qian, X., Wang, W., & Liu, Y. (2020). Hierarchical Graph Network for Multi-document Summarization. *Proceedings of ACL 2020*.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -186,24 +186,18 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch: `git push origin feature/your-feature`
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - The authors of the research papers cited above
 - The Hugging Face community for providing pre-trained models
 - The open-source developers of libraries used in this project
 - Faculty advisors for guidance and support
 
-## 📧 Contact
+## Contact
 
 For questions or collaboration opportunities:
-- Email: your.email@example.com
-- GitHub: [@your_username](https://github.com/your_username)
-- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-
+- Email: shuvamishra15937@gmail.com
+- GitHub: [@samshuvam](https://github.com/samshuvam)
 ---
 
 **Note**: This project is for educational and research purposes. The system's responses should be verified with authoritative sources before being used for critical applications.
