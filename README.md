@@ -1,9 +1,9 @@
-# 🚀 Aerospace Intelligence System
+# Intelligence System
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
 [![Research](https://img.shields.io/badge/Research-Domain%20Specific%20IR-orange)](research/)
 
-A research-enhanced information retrieval system that answers complex aerospace engineering questions by intelligently gathering and synthesizing information from web pages and YouTube videos using advanced algorithms and large language models.
+An information retrieval system that answers complex questions by intelligently gathering and synthesizing information from web pages and YouTube videos using advanced algorithms and large language models.
 
 ## System Architecture
 
@@ -11,14 +11,14 @@ A research-enhanced information retrieval system that answers complex aerospace 
 
 This project implements several research-backed innovations:
 
-- **Domain-Specific TrustRank Algorithm**: Adapts the seminal TrustRank algorithm (Gyöngyi et al., 2004) for aerospace source credibility assessment
-- **Knowledge Graph Enhanced Merging**: Implements cross-document entity coreference (Erera et al., 2023) for multi-source information integration
+- **Domain Specific TrustRank Algorithm**: Adapts the seminal TrustRank algorithm (Gyöngyi et al., 2004) for source credibility assessment
+- **Knowledge Graph Enhanced Merging**: Implements cross document entity coreference (Erera et al., 2023) for multi-source information integration
 - **Context-Aware Query Expansion**: Uses BERT embeddings with domain adaptation for query understanding
 - **Multi-Modal Information Retrieval**: Fuses textual and video content for comprehensive knowledge synthesis
 
 ##  Features
 
-- **Natural Language Query Processing**: Understands complex aerospace engineering questions
+- **Natural Language Query Processing**: Understands complex questions
 - **Multi-Source Information Gathering**: Searches web and YouTube for relevant content
 - **Source Credibility Assessment**: Ranks sources based on authority and relevance using TrustRank
 - **Content Deduplication & Integration**: Merges information from multiple sources using knowledge graphs
@@ -111,8 +111,8 @@ Visit `http://localhost:8501` in browser to access the Streamlit interface:
 
 This project includes two standalone research modules that demonstrate advanced algorithms:
 
-### 1. Smart Source Ranking (`research_modules/smart_ranking.py`)
-- **Algorithm**: Domain-Specific TrustRank
+### 1. Smart Source Ranking 
+- **Algorithm**: Domain Specific TrustRank
 - **Research Foundation**: Gyöngyi et al. (2004), Zhang et al. (2021)
 - **Features**:
   - Authority propagation from seed sources
@@ -120,7 +120,7 @@ This project includes two standalone research modules that demonstrate advanced 
   - Credibility graph visualization
   - Research metrics generation
 
-### 2. Smart Content Merging (`research_modules/smart_merge.py`)
+### 2. Smart Content Merging 
 - **Algorithm**: Knowledge Graph Enhanced Multi-Document Summarization
 - **Research Foundation**: Wang et al. (2022), Erera et al. (2023)
 - **Features**:
@@ -140,7 +140,7 @@ aerospace-intelligence-system/
 ├── extractors/
 │   ├── webextractor.py     
 │   └── ytextractor.py      
-├── research_modules/
+├── re_mod/
 │   ├── smart_ranking.py    
 │   └── smart_merge.py      
 ├── model/
@@ -163,17 +163,17 @@ This project builds upon several important research papers:
    - Gyöngyi, Z., Garcia-Molina, H., & Pedersen, J. (2004). Combating web spam with TrustRank. *Proceedings of the 30th VLDB Conference*.
 
 2. **Domain-Specific Adaptation**:
-   - Zhang, Y., Chen, X., & Liu, Y. (2021). Domain-specific trust assessment in scientific information retrieval. *Journal of Information Science*, 47(3), 321-335.
+   - Kai Kang,Kunhui Lin,Changle Zhou ,Feng Guo. Domain-Specific Information Retrieval Based on Improved Language Model.
 
 3. **Knowledge Graph Integration**:
-   - Wang, Q., Mao, Z., Wang, B., & Guo, L. (2022). Knowledge Graph Enhanced Multi-Document Summarization. *Proceedings of EMNLP 2022*.
-   - Erera, R., Carmeli, B., Bronshtein, E., & Berant, J. (2023). Cross-Document Entity Coreference for Technical Domains. *Journal of Artificial Intelligence Research*, 76, 1125-1158.
+   - Pancheng Wang, Shasha Li, Kunyuan Pang, Liangliang He, Dong Li, Jintao Tang, Ting Wang. Multi-Document Scientific Summarization from a Knowledge Graph-Centric View.
+   - Zhang Dong1, Mingbang Wang2, Songhang deng1, Le Dai, Jiyuan Li3, Xingzu Liu4, Ruilin Nong (2025). Cross-Document Contextual Coreference Resolution in Knowledge Graphs.
 
 4. **Context-Aware Query Expansion**:
    - Nogueira, R., & Cho, K. (2019). Passage Re-ranking with BERT. *arXiv preprint arXiv:1901.04085*.
 
 5. **Multi-Document Summarization**:
-   - Li, C., Qian, X., Wang, W., & Liu, Y. (2020). Hierarchical Graph Network for Multi-document Summarization. *Proceedings of ACL 2020*.
+   - Yingjie Song, Li Yang, Wenming Luo, Xiong Xiao, Zhuo Tang(2025). Boosting multi-document summarization with hierarchical graph convolutional networks.
 
 ## Contributing
 
