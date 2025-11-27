@@ -11,8 +11,8 @@ An information retrieval system that answers complex questions by intelligently 
 
 This project implements several research-backed innovations:
 
-- **Domain Specific TrustRank Algorithm**: Adapts the seminal TrustRank algorithm (Gyöngyi et al., 2004) for source credibility assessment
-- **Knowledge Graph Enhanced Merging**: Implements cross document entity coreference (Erera et al., 2023) for multi-source information integration
+- **Domain Specific TrustRank Algorithm**: Adapts the seminal TrustRank algorithm for source credibility assessment
+- **Knowledge Graph Enhanced Merging**: Implements cross document entity coreference for multi-source information integration
 - **Context-Aware Query Expansion**: Uses BERT embeddings with domain adaptation for query understanding
 - **Multi-Modal Information Retrieval**: Fuses textual and video content for comprehensive knowledge synthesis
 
