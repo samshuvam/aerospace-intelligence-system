@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilot Rating Predictor</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Pilot Rating Predictor</h1>
+    <form id="pilot-form">
+        <div id="input-fields">
+            <label for="Flight_Hours">Flight Hours:</label>
+            <input type="number" id="Flight_Hours" name="Flight_Hours" required><br>
+        </div>
+        <button type="submit">Predict Rating</button>
+    </form>
+    <h2 id="result"></h2>
+
+    <script>
+        const features = [
+            'Flight_Hours', 'Training_Scores', 'Incident_Reports', 'Flight_Maneuver_Proficiency',
+            'Physiological_Data', 'Cognitive_Performance', 'Stress_Levels', 'Communication_Skills',
+            'Weather_Adaptability', 'Peer_Reviews', 'Simulator_Performance', 'Fatigue_Management'
+        ];
+
+        let currentFeatureIndex = 0;
+
+        $('#pilot-form').on('submit', function(event) {
+            event.preventDefault();
+            const formData = {};
+            $('#pilot-form').serializeArray().forEach(item => {
+                formData[item.name] = parseFloat(item.value);
+            });
+
+            $.ajax({
+                url: '/predict',
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(formData),
+                success: function(response) {
+                    $('#result').text(`Predicted Final Rating: ${response.rating}`);
+                }
+            });
+        });
+
+        $('#input-fields').on('change', 'input', function() {
+            const lastFeature = features[currentFeatureIndex];
+            const lastValue = parseFloat($(this).val());
+
+            if (currentFeatureIndex < features.length - 1) {
+                currentFeatureIndex++;
+                const nextFeature = features[currentFeatureIndex];
+
+                $.ajax({
+                    url: '/suggest',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ last_feature: lastFeature, last_value: lastValue }),
+                    success: function(response) {
+                        $('#input-fields').append(`
+                            <label for="${nextFeature}">${nextFeature.replace('_', ' ')}:</label>
+                            <input type="number" id="${nextFeature}" name="${nextFeature}" value="${response.suggestion}" required><br>
+                        `);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

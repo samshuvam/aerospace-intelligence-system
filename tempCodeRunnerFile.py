@@ -1,0 +1,1 @@
+df['GoAround'] = df['GoAround'].map({'Yes': 1, 'No': 0})
